@@ -1,11 +1,11 @@
 <h1 align="center">BLOG - TEST SITE</h1>
 
 ***
-###PROJECT DESCRIPTION
+### PROJECT DESCRIPTION
 
 Test site (Blog) for testing various features of the Django framework.
 
-###INSTALLATION
+### INSTALLATION
 
 The app uses python 3.8 version. To run the application, you need to install the Django framework version 3.2.6. Installation command:
 
