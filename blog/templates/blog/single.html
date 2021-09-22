@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load sidebar %}
 
 {% block title %}{{ post.title }} :: {{ block.super }}{% endblock %}
 
@@ -116,60 +117,9 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="button-group filters-button-group">
-                            <button data-filter=".recent" class="button is-checked">Recent</button>
-                            <button data-filter=".popular" class="button">popular</button>
-                            <button data-filter=".users" class="button">Users</button>
-                        </div>
 
-                        <div class="grid" style="position: relative; height: 1221.93px;">
-                            <div class="portfolio-item recent" style="position: absolute; left: 0px; top: 0px;">
-                                <img src="img/portfolio1.jpg" alt="">
-                                <div class="portfolio-text">
-                                    <h5><a href="#">Pay Close Attention To People Who Don’t Clap When You Win recent1.</a></h5>
-                                    <p>By Kabbo Liate <span>|</span>25 February 2017</p>
-                                </div>
-                            </div>
-                            <div class="portfolio-item recent" style="position: absolute; left: 0px; top: 0px;">
-                                <img src="img/portfolio2.jpg" alt="">
-                                <div class="portfolio-text">
-                                    <h5><a href="#">Pay Close Attention To People Who Don’t Clap When You Win recent2.</a></h5>
-                                    <p>By Kabbo Liate <span>|</span>25 February 2017</p>
-                                </div>
-                            </div>
-                            <div class="portfolio-item popular" style="position: absolute; left: 0px; top: 0px;">
-                                <img src="img/portfolio3.jpg" alt="">
-                                <div class="portfolio-text">
-                                    <h5><a href="#">Pay Close Attention To People Who Don’t Clap When You Win popular1.</a></h5>
-                                    <p>By Kabbo Liate <span>|</span>25 February 2017</p>
-                                </div>
-                            </div>
-                            <div class="portfolio-item popular" style="position: absolute; left: 0px; top: 0px;">
-                                <img src="img/portfolio4.jpg" alt="">
-                                <div class="portfolio-text">
-                                    <h5><a href="#">Pay Close Attention To People Who Don’t Clap When You Win popular2.</a></h5>
-                                    <p>By Kabbo Liate <span>|</span>25 February 2017</p>
-                                </div>
-                            </div>
-                            <div class="portfolio-item users" style="position: absolute; left: 0px; top: 0px;">
-                                <img src="img/portfolio5.jpg" alt="">
-                                <div class="portfolio-text">
-                                    <h5><a href="#">Pay Close Attention To People Who Don’t Clap When You Win users1.</a></h5>
-                                    <p>By Kabbo Liate <span>|</span>25 February 2017</p>
-                                </div>
-                            </div>
-                            <div class="portfolio-item users" style="position: absolute; left: 0px; top: 0px;">
-                                <img src="img/portfolio1.jpg" alt="">
-                                <div class="portfolio-text">
-                                    <h5><a href="#">Pay Close Attention To People Who Don’t Clap When You Win users2.</a></h5>
-                                    <p>By Kabbo Liate <span>|</span>25 February 2017</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sidebar-ads">
-                            <img src="img/sidebar-ads.jpg" alt="">
-                            <p>Place For Your <br> Ad Banner</p>
-                        </div>
+                        {% get_popular 3 %}
+
                         <div class="tags">
                             <h2 class="sidebar-title">Tags</h2>
                             <p><a href="#">Adventure</a></p>
