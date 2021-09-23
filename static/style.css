@@ -750,3 +750,8 @@ section.blog-post-area h4 span.author-name {
     font-size: 15px;
     font-weight: 500;
 }
+
+.grid .portfolio-item img {
+    height: auto;
+    width: 100px;
+}
